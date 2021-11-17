@@ -1,0 +1,538 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+body{ background-color: rgba(0, 0, 0, 1);
+  
+
+    font-family: sans-serif;
+   
+
+}
+
+.slider-box{ width: 100%;
+height: 90vh; 
+/*margin: 30px auto;*/
+position: relative;
+overflow: hidden;}
+#slider{
+    width: 100%;
+    display: inline-flex;
+    transition: 0.7s;
+
+}
+#slider img{width: 100%;
+}
+.indicator{position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+
+}
+.indicator span{display: inline-block;
+width: 15px;
+height: 15px;
+border-radius: 50%;
+background: rgba(255, 255, 255, 0.5);
+cursor: pointer;}
+.active{background: red !important;}
+
+
+
+/*2nd page*/
+
+.h1 h1{font-size: 40px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 40px;
+    margin-bottom: 80px;
+color: black;}
+.icon1{display: inline-flex;}
+.icon1 h2{ margin-left: 20%;margin-right: 10%; color: rgba(0, 0, 0, 0.2); }
+
+.icon1 img{ width: 13%;
+float: right; 
+margin-right: 25%;
+margin-bottom: 5px;}
+
+
+
+ /*2nd page service show*/
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 22%;
+  margin-left: 30px;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card {
+  box-shadw: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-colo: #f1f1f1;
+}
+.card h3{margin-bottom: 10px;}
+.card p{color: rgba(0, 0, 0, 0.3); }
+.card img{ width: 70px; height: auto; margin-bottom: 15px; }
+
+
+/*3rd page project*/
+ .clm {
+
+        margin-top: 30px;
+  display: inline-flex;
+  width: 22%;
+  margin-left: 4px;
+  padding: 0 8px;
+}
+
+
+
+/*Project*/
+/* Style the counter cards */
+.flex {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 0px;
+  text-align: center;
+  background-color: #f1f1f1;
+  padding-bottom: 50px;
+}
+.flex:hover{background-color: yellow;}
+.flex h3{ margin-top: 20px; }
+.flex p{margin-top: 10px;  color: rgba(0, 0, 0, 1.0);}
+.button{margin-bottom: 20px; margin-top: 40px;}
+
+.flex img{ width:100%; height: 50vh; 
+          padding-bottom: 25px; 
+        }
+
+button {
+  border: none;
+  outline: 0;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 8px;
+  color: rgba(0, 0, 200, 1.0);
+  background-color: rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}  
+button:hover{background-color: yellow;}
+
+
+/*4th page prce table*/
+.pclm {
+  float: left;
+  width: 20%;
+  margin-left: 20px;
+  padding: 0 10px;
+  margin-top: 30px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the pclms */
+.prow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive pclms */
+@media screen and (max-width: 600px) {
+  .pclm {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.pcard {
+  box-shadw: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-colo: #f1f1f1;
+ 
+}
+.pcard h3{margin-bottom: 10px;}
+.pcard p{ padding: 5px; }
+.pcard img{ width: 70px; height: auto; margin-bottom: 15px; }
+
+  .price:hover {background-color: indigo;
+       color: white;}
+      .price{color: rgba(0, 0, 0, 1.0);
+        background-color: yellow;
+        width: 70%;}
+ 
+/*team member 1row*/
+      .container{width: 150px;
+      border-radius: 50%;
+      height: 150px; position: relative;
+      margin-right: 70px;}
+      .image{width: 150px; height: 150px; border-radius: 50%;  }
+      .overlay{position: absolute;
+      transition: all.5s ease;
+      opacity: 0;
+      background-color:green;}
+      .container:hover  .overlay{opacity: 1;}
+      .text{color: red;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 30px;
+      display: inline-flex;
+      margin:0px; }
+      .overlayleft{height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      background: rgb(0, 0, 0); /* Fallback color */
+      background: rgba(0, 0, 100, 0.5); }
+      .overlayleft{height: 100%;}
+      .ico{margin-left: x;}
+      .ico:hover{opacity: 0.5;}
+
+      /*team member 2ro*/
+
+
+       .tim2{display: inline-flex;
+      margin-left: 23%;
+      margin-top: 90px;}
+      .team{width: 150px;
+      border-radius: 50%;
+      height: 150px; position: relative;
+      margin-right: 70px;}
+      .img{width: 150px; height: 150px; border-radius: 50%;  }
+      .over{position: absolute;
+      transition: all.5s ease;
+      opacity: 0;
+      background-color:green;}
+      .team:hover  .over{opacity: 1;}
+      .text{color: red;
+      position: relative;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      font-size: 30px;
+      display: inline-flex;
+      margin:0px; }
+      .overfad{height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      background: rgb(0, 0, 0);
+      background: rgba(0, 0, 100, 0.5); }
+      .overfad{height: 100%;}
+      .ico{margin-left: x;}
+      .ico:hover{opacity: 0.5;}
+      .h3tm{text-align: center; margin-top: 15px;}
+      .ptm{color: gray;
+      text-align: center;
+      margin-top: 8px;}
+
+
+
+/*8th page bloge*/
+    .blogclm {
+  float: left;
+  width: 20%;
+  margin-left: 30px;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.blogrow {
+  display: inline-flex;
+ justify-items: space-around; 
+ margin-left:5px;
+  margin-top:40px;
+}
+
+/* Style the counter cards */
+.blogcrd {
+  box-shadw: 0 6px 12px 0 rgba(0, 0, 0, 0.9);
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+  background-colo: #f1f1f1;
+}
+.blogcrd a:hover{background-color: green;
+padding: 20px;}
+.blogcrd h3{margin-bottom: 10px;}
+.blogcrd img{ width: 250px; height: auto; margin-bottom: 15px; border-radius: 10px; }
+
+
+
+
+/*9th spilt page*/
+ .clmcontact {
+  float: left;
+  width: 46%;
+  margin-left: 0px;
+  margin-top: 60px;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.rowcontact {margin: 0 -5px;}
+
+/* Clear floats after the clmcontacts */
+.rowcontact:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Style the counter cards */
+.crdcontact {
+  box-shadw: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  background-colo: #f1f1f1;
+}
+.crdcontact h3{margin-bottom: 10px; font-size: 40px;}
+.crdcontact img{ width: 200px; height: auto; margin-bottom: 15px; border-radius: 10px; }
+ 
+
+
+/*Navbar*/
+
+
+.nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    background:#000;
+    color: #fff;
+    padding: 1em 6em;
+
+}
+
+    padding: 0 1em;
+}
+.nav.logo{
+    text-decoration: none;
+    color:black;
+    font-size:40px;
+   
+}
+
+.nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+.nav li{
+    list-style: none;
+
+}
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    padding-right:2em;
+    font-size: 1em;
+
+}
+.nav a:hover{
+    color: rgb(216, 185, 10);
+    letter-spacing: 2px;
+}
+
+
+/*slider*/
+.slider{width: 800px;
+height: 500px;
+border-radius: 10px;
+}
+ 
+ /*slider-tex*/
+  .div-land-text{  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .botton-land{color: white; padding-left: 20px; padding-right: 20px;background-color: indigo;}
+  .botton-land:hover{background-color: yellow !important;
+    color: black;
+  }
+  .h1-land{color:white;  }
+  .p-land{color:white; color: rgba(255,255,255, 0.8);  margin-top: 20px;}
+  .div-land-botton{display: inline-flex; justify-content: space-around; margin-left:60px; margin-top:20PX;  }
+
+/*Fon fill up*/
+
+   input[type=text], input[type=email], textarea {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+ /* background-color: green;*/
+  color: white;
+  font-weight: bold;
+  padding: 15px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.inf{background-color: indigo;}
+.inf:hover{background-color: green;}
+/*input[type=submit]:hover {
+  background-color: green;
+}*/
+
+
+/*gallery slide*/
+
+
+
+  img {
+  vertical-align: middle;
+  }
+  /* Position the image maindiv (needed to position the left and right arrows) */
+  .maindiv {
+  position: relative;
+  }
+  /* Hide the images by default */
+  .slidess {
+  display: none;
+  }
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursur {
+  cursur: pointer;
+  }
+  /* Next & previous buttons */
+  .prev,
+  .next {
+  cursur: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 10px;
+  margin-top: 216px;
+  color: white;
+  background-color: black;
+  font-weight: bold;
+  height: 43px;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  
+  }
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+
+  border-radius: 3px 0 0 3px;
+  }
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  }
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+  margin-left: 2px;
+  }
+  /* Six lifes side by side */
+  .life {
+  float: left;
+  width: 16.66%;
+  }
+  /* Add a transparency effect for thumnbail images */
+  .show {
+  opacity: 0.6;
+  }
+  .active,
+  .show:hover {
+  opacity: 1;
+  }
+  .slidess{h}
+
+
+  /*vedio projec*/
+   .main{width: 100%;
+          height: 500px;
+          margin: 60px auto;
+          padding-right: 25px;
+          padding-top: 40px;
+          padding-bottom: 90px;
+          overflow: hidden;
+          position: relative;
+          background-color: indigo;
+        }
+
+          .arow{position: absolute;
+            top: 50%;
+            color: white;
+            border-radius: 20%;
+            background-color: whte;
+            font-size: 100px;
+            font-weight: bold;
+            cursor: pointer;
+            left: 0px;
+            z-index: 1;
+          }
+          .arow:hover{ color: yellow;}
+          .arow:nth-of-type(2){left: 97%;
+            text-align: center;}
+            .section-vedio{width: 98%;
+              height: 400px;
+              margin: 10px auto;
+              background-color: ellow;
+              display:flex;
+            
+              justify-content: left;
+              overflow-x: ;}
+              .section-vedio::-webkit-scrollbar{visibility: hidden;}
+              .div-vedio{width: 530px;
+                height: 200px;
+                position: relative;
+                left: 0;
+                text-align: center;
+                padding-top: 0px;
+                
+                font-size: 100px;
+                padding-right: 0px;
+                color: white;
+              
+              transition: 0.6s;
+              margin: 10px 20px;
+              }
+              .imgs{
+                width: 500px; height: 350px; border:2px sold green;
+              }
+              .pk{font-size:16px; text-align:left; margin-top:-10px;}
+              .pr{font-size:16px; text-align:right; margin-top:-19px;}

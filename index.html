@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="nav"  style="">
+      <div class="logo" style="font-size: 20px; margin-left: 200px;">
+        <a href="#">Zimmy
+          <!--   <img src="images/logo.png" width="80"> -->
+        </a>
+      </div>
+      <ul class='navbar' style="margin-right: 150px;">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Product</a></li>
+        <li><a href="#">Price</a></li>
+        <li><a href="#">Team</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">contact</a></li>
+      </ul>
+      <!--  <div class="toggle">jkk</div>  -->
+    </div>
+    <style>
+    .container {
+    position: relative;
+    }
+    .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    }
+    img {
+    width: 100%;
+    height: auto;
+    opacity: 1;
+    }
+    </style>
+    <div class="slider-box">
+      <div id="slider">
+        <div class="div-land-text" >
+          <h1 class="h1-land">One Page promishing to <br> <span>fill all your need</span></h1>
+          <p class="p-land"> theis is the photo shop version of lurum poim <br><span>govinda vel veait aliquer</span>  </p>
+          <div class="div-land-botton"> <button class="botton-land" >learn morr</button>
+          <button class="botton-land" style=" margin-left: 10px;">learn morr</button></div>
+        </div>
+        <img  src="uploade/3.png" >
+        <img  src="uploade/2.jpg">
+        <img  src="uploade/1.jpg" >
+        
+        <img  src="uploade/4.jpg" >
+      </div>
+      <div class="indicator">
+        <span id="btn1" class="active"></span>
+        <span id="btn2"></span>
+        <span id="btn3"></span>
+        <span id="btn4"></span>
+      </div>
+    </div>
+    <script>
+    var slide=document.getElementById('slider');
+    var btn1=document.getElementById('btn1');
+    var btn2=document.getElementById('btn2');
+    var btn3=document.getElementById('btn3');
+    var btn4=document.getElementById('btn4');
+    btn1.onclick=function(){
+    slide.style.transform="translatex(0px)";
+    // for actctive
+    btn1.classList.add("active");
+    // for remove active
+    btn2.classList.remove("active");
+    btn3.classList.remove("active");
+    btn4.classList.remove("active");
+    }
+    btn2.onclick=function(){
+    slide.style.transform="translatex(-100%)";
+    btn2.classList.add("active");
+    btn1.classList.remove("active");
+    btn3.classList.remove("active");
+    btn4.classList.remove("active");
+    }
+    btn3.onclick=function(){
+    slide.style.transform="translatex(-200%)";
+    btn3.classList.add("active");
+    btn2.classList.remove("active");
+    btn1.classList.remove("active");
+    btn4.classList.remove("active");
+    }
+    btn4.onclick=function(){
+    slide.style.transform="translatex(-300%)";
+    btn3.classList.remove("active");
+    btn2.classList.remove("active");
+    btn1.classList.remove("active");
+    btn4.classList.add("active");
+    }
+    </script>
+    <br>
+    <section style="background-color:white; width:90%; margin-left:5%; margin-right:5%;">
+      <!-- welcome sextin -->
+      <section style="width:98%;">
+        <div class="h1">
+          <h1>Welcome to Zippy</h1>
+          
+        </div>
+        <style>
+        .learn:hover {background-color: indigo;
+        color: white;}
+        .learn{color: rgba(0, 0, 0, 1.0);
+        background-color: yellow;
+        font-weight: bold;
+        width: 70%;}
+        </style>
+        <div class="icon1">
+          <h2 >The CSS float property is a positioning property. It is used to push an element to the left or right, allowing other
+          elements to wrap around it. </h2>
+        <img src="uploade/icon.jpg" ></div>
+      </section>
+      <!-- Product sextion -->
+      <section style="width:98%">
+        <div class="row" style="margin-left: 15%;">
+          <div class="column">
+            <div class="card">
+              <img src="uploade/icon2.jpg" alt="alt">
+              <h3>Lorium Ipsum</h3>
+              <p> Modify, resize, or recolor Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 different styles</p>
+              <p><button class="learn">Learn More</button></p>
+            </div>
+          </div>
+          
+          
+          <div class="column">
+            <div class="card">
+              <img src="uploade/icon2.jpg" alt="alt">
+              <h3>Dollor Shit</h3>
+              <p> Modify, resize, or recolor Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 different styles</p>
+              <p><button class="learn">Learn More</button></p>
+            </div>
+          </div>
+          
+          <div class="column">
+            <div class="card">
+              <img src="uploade/icon2.jpg" alt="alt">
+              <h3>Consecteture</h3>
+              <p> Modify, resize, or recolor Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 different stylest</p>
+              <p><button class="learn">Learn More</button></p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+      
+      <div style="border-bottom: 3px solid rgba(0, 0, 0, 0.1); width: 60%; margin-left: 16%;"></div>
+      <br><br>
+      <!-- Product show -->
+      <style>
+      .project:hover {background-color: indigo;
+      color: white;}
+      .project{color: rgba(0, 0, 0, 1.0);
+      background-color: white;
+      font-weight: bold;
+      width: 70%;}
+      </style>
+      <section style="width:100%">
+        <h1 style="font-weight: bold; text-align:center; margin-top: 30px; margin-bottom: 20px; font-size: 40px;"> Project</h1>
+        <div class="horizantal" style="width:100%; margin-left:2%;">
+          <div class="clm">
+            <div class="flex">
+              <img src="uploade/chiya masala.jpg"  alt="alt">
+              <h3 style="margin-left:30px; text-align:left; font-size: 23px;">Project Name</h3>
+              <p style="text-align:left; margin-left:30px; color: rgba(0, 0, 0, 0.4); margin-right:20px;">  Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 different styles in 35 different styles</p>
+              <p><button class="project">Lunch Case Study</button></p>
+            </div>
+          </div>
+          
+          
+          <div class="clm">
+            <div class="flex" style="width:100%;">
+              <img src="uploade/chiya masala.jpg"  alt="alt">
+              <h3 style="margin-left:30px; text-align:left; font-size: 23px;">Project Name</h3>
+              <p style="text-align:left; margin-left:30px; color: rgba(0, 0, 0, 0.4); margin-right:20px;">  Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 different styles in 35 different styles</p>
+              <p><button class="project">Lunch Case Study</button></p>
+            </div>
+          </div>
+          
+          <div class="clm">
+            <div class="flex">
+              <img src="uploade/chiya masala.jpg"  alt="alt">
+              <h3 style="margin-left:30px; text-align:left; font-size: 23px;">Project Name</h3>
+              <p style="text-align:left; margin-left:30px; color: rgba(0, 0, 0, 0.4); margin-right:20px;">  Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 different styles in 35 different stylest</p>
+              <p><button class="project">Lunch Case Study</button></p>
+              
+            </div>
+          </div>
+          <div class="clm">
+            <div class="flex">
+              <img src="uploade/chiya masala.jpg"  alt="alt">
+              <h3 style="margin-left:30px; text-align:left; font-size: 23px;">Project Name</h3>
+              <p style="text-align:left; margin-left:30px; color: rgba(0, 0, 0, 0.4); margin-right:20px;">  Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 different styles in 35 different stylest</p>
+              <p><button class="project">Lunch Case Study</button></p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 4th page pricing -->
+      
+      <section style="width:100%">
+        <h1 style="font-weight:bold; margin-top: 70px; font-size:50px; text-align:center;"> Pricing Tables</h1>
+        <!-- table -->
+        <div class="prow" style="margin-left: 19%;">
+          <div class="pclm">
+            <div class="pcard">
+              <h1 style="margin-bottom: 15px; text-align:center;">Standard Plan</h1>
+              
+              <h3 style="font-size:18px; color:gray; text-align: center;">free</h3>
+              <p>1 GB Storage</p>
+              <p>Un Limited Email</p>
+              <p>299HZ Processor</p>
+              <p>Cloud Computing</p>
+              <p>30 Day Backup</p>
+              <p><button class="price">Buy</button></p>
+            </div>
+          </div>
+          
+          
+          <div class="pclm">
+            <div class="pcard" style=" border-left: 3px solid rgba(0, 0, 0, 0.1); height:240px;">
+              <h1 style="margin-bottom: 15px; text-align:center;">Bussiness Plan</h1>
+              
+              <h3 style="font-size:18px; color:gray; text-align: center;">195 / month</h3>
+              <p>1 GB Storage</p>
+              <p>Un Limited Email</p>
+              <p>299HZ Processor</p>
+              <p>Cloud Computing</p>
+              <p>30 Day Backup</p>
+              <p><button class="price">Buy</button></p>
+            </div>
+          </div>
+          
+          
+          <div class="pclm">
+            <div class="pcard" style=" border-left: 3px solid rgba(0, 0, 0, 0.1); height:240px;">
+              <h1 style="margin-bottom: 15px; text-align:center;">Premium Plan</h1>
+              
+              <h3 style="font-size:18px; color:gray; text-align: center;">195 / month</h3>
+              <p>1 GB Storage</p>
+              <p>Un Limited Email</p>
+              <p>299HZ Processor</p>
+              <p>Cloud Computing</p>
+              <p>30 Day Backup</p>
+              <p><button class="price">Buy</button></p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 5th page vedio presentation -->
+      <section style="width:98%">
+        
+        <main class="main">
+          <h1 style="font-weight:bold; margin-top: 40px; color: white; font-size:30px; text-align:center;"> Vedio Project</h1>
+          <br><br><br>
+          <section class="section-vedio">
+            
+            <span id="span" class="arow">&#139;</span>
+            <span id="span" class="arow">&#155;</span>
+            
+            <div class="div-vedio">
+              <video  class="imgs" controls>
+              <source src="uploade/v1.mp4" type="video/mp4">yuor brwser doesnot sopport html file vedio</video>
+              <p class="pk" >Video title xyz------</p>
+              <p class="pr" >1/9</p>
+            </div>
+            <div class="div-vedio">
+              <video  class="imgs" controls>
+              <source src="uploade/v1.mp4" type="video/mp4">yuor brwser doesnot sopport html file vedio</video>
+              <p class="pk" >Video title xyz------</p>
+              <p class="pr" >2/9</p>
+            </div>
+            <div class="div-vedio">
+              <video  class="imgs" controls>
+              <source src="uploade/v1.mp4" type="video/mp4">yuor brwser doesnot sopport html file vedio</video>
+              <p class="pk" >Video title xyz------</p>
+              <p class="pr" >3/9</p>
+            </div>
+            <div class="div-vedio">
+              <video  class="imgs" controls>
+              <source src="uploade/v1.mp4" type="video/mp4">yuor brwser doesnot sopport html file vedio</video>
+              <p class="pk" >Video title xyz------</p>
+              <p class="pr" >4/9</p>
+            </div>
+            <div class="div-vedio">
+              <video  class="imgs" controls>
+              <source src="uploade/v1.mp4" type="video/mp4">yuor brwser doesnot sopport html file vedio</video>
+              <p class="pk" >Video title xyz------</p>
+              <p class="pr" >5/9</p>
+            </div>
+            <div class="div-vedio">
+              <video  class="imgs" controls>
+              <source src="uploade/v1.mp4" type="video/mp4">yuor brwser doesnot sopport html file vedio</video>
+              <p class="pk" >Video title xyz------</p>
+              <p class="pr" >6/9</p>
+            </div>
+            <div class="div-vedio">
+              <video  class="imgs" controls>
+              <source src="uploade/v1.mp4" type="video/mp4">yuor brwser doesnot sopport html file vedio</video>
+              <p class="pk" >Video title xyz------</p>
+              <p class="pr" >7/9</p>
+            </div>
+            <div class="div-vedio">
+              <video  class="imgs" controls>
+              <source src="uploade/v1.mp4" type="video/mp4">yuor brwser doesnot sopport html file vedio</video>
+              <p class="pk" >Video title xyz------</p>
+              <p class="pr" >8/9</p>
+            </div>
+            <div class="div-vedio">
+              <video  class="imgs" controls>
+              <source src="uploade/v1.mp4" type="video/mp4">yuor brwser doesnot sopport html file vedio</video>
+              <p class="pk" >Video title xyz------</p>
+              <p class="pr" >9/9</p>
+            </div>
+            
+          </section>
+          <script type="text/javascript">
+          // var span=document.getElementsById('span');
+          var span=document.getElementsByClassName("arow");
+          
+          var div=document.getElementsByClassName("div-vedio");
+          var l = 0;
+          span[1].onclick=()=>{
+          l++;
+          for(var i of div)
+          {
+          if (l==0) {i.style.left="0px";}
+          if (l==1) {i.style.left="-740px";}
+          if (l==2) {i.style.left="-1480px";}
+          if (l==3) {i.style.left="-2240px";}
+          if (l==4) {i.style.left="-2960px";}
+          if (l>4) {l=4;}
+          }
+          }
+          span[0].onclick=()=>{
+          l--;
+          for(var i of div)
+          {
+          if (l==0) {i.style.left="0px";}
+          if (l==1) {i.style.left="-740px";}
+          if (l==2) {i.style.left="-1480px";}
+          if (l==3) {i.style.left="-2220px";}
+          
+          if (l<0) {l=0;}
+          }
+          }
+          </script>
+        </main>
+      </section>
+      <!-- Team memner -->
+      
+      <section>
+        <h1 style="font-weight:bold; margin-top: 0px; margin-bottom: 40px; font-size:30px; text-align:center;"> Zippy team</h1>
+        <div style="display: inline-flex; margin-left:23%;">
+          <div class="container">
+            <img src="uploade/1000.jpg" alt="Avatar" class="image" >
+            <div class="overlay overlayleft">
+              <div class="text"><a href="#"><img src="uploade/fb.png" class="ico"></a> <a href="#"><img src="uploade/twt.png"  class="ico"></a><a href="#"><img src="uploade/you.png" class="ico"></a></div>
+            </div>
+            <div>
+              <h3 class="h3tm">Mr.Lalit</h3>
+              <p class="ptm">Creative head </p>
+            </div>
+          </div>
+          <div class="container">
+            <img src="uploade/1000.jpg" alt="Avatar" class="image" >
+            <div class="overlay overlayleft">
+              <div class="text"><a href="#"><img src="uploade/fb.png" class="ico"></a> <a href="#"><img src="uploade/twt.png"  class="ico"></a><a href="#"><img src="uploade/you.png" class="ico"></a></div>
+            </div>
+            <div>
+              <h3 class="h3tm">Mr.Cobra</h3>
+              <p class="ptm">Seo moster </p>
+            </div>
+          </div>
+          <div class="container">
+            <img src="uploade/1000.jpg" alt="Avatar" class="image" >
+            <div class="overlay overlayleft">
+              <div class="text"><a href="#"><img src="uploade/fb.png" class="ico"></a> <a href="#"><img src="uploade/twt.png"  class="ico"></a><a href="#"><img src="uploade/you.png" class="ico"></a></div>
+            </div>
+            <div>
+              <h3 class="h3tm">Mr.zebra cross</h3>
+              <p class="ptm">Senior designer </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="tim2">
+          <div class="team">
+            <img src="uploade/1000.jpg" alt="Avatar" class="img" >
+            <div class="over overfad">
+              <div class="text"><a href="#"><img src="uploade/fb.png" class="ico"></a> <a href="#"><img src="uploade/twt.png"  class="ico"></a><a href="#"><img src="uploade/you.png" class="ico"></a></div>
+            </div>
+            <div>
+              <h3 class="h3tm">Mr.Lalit</h3>
+              <p class="ptm">Creative head </p>
+            </div>
+          </div>
+          <div class="team">
+            <img src="uploade/1000.jpg" alt="Avatar" class="image" >
+            <div class="over overfad">
+              <div class="text"><a href="#"><img src="uploade/fb.png" class="ico"></a> <a href="#"><img src="uploade/twt.png"  class="ico"></a><a href="#"><img src="uploade/you.png" class="ico"></a></div>
+            </div>
+            <div>
+              <h3 class="h3tm">Mr.Cobra</h3>
+              <p class="ptm">Seo moster </p>
+            </div>
+          </div>
+          <div class="team">
+            <img src="uploade/1000.jpg" alt="Avatar" class="image" >
+            <div class="over overfad">
+              <div class="text"><a href="#"><img src="uploade/fb.png" class="ico"></a> <a href="#"><img src="uploade/twt.png"  class="ico"></a><a href="#"><img src="uploade/you.png" class="ico"></a></div>
+            </div>
+            <div>
+              <h3 class="h3tm">Mr.zebra cross</h3>
+              <p class="ptm">Senior designer </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!-- 8th page blog -->
+      <br><br><br>   <br><br><br>
+      <section>
+        <!-- life in zippy -->
+        <section>
+          <h1 style="font-weight:bold; margin-top: 40px; margin-bottom: 30px; font-size:30px; text-align:center;"> life in zppy</h1>
+          <div class="maindiv" style="width: 50%;  margin-left: 30%;">
+            <div class="slidess">
+              
+              <img src="uploade/1000.jpg" style="width:100%; height: 65vh;">
+            </div>
+            <div class="slidess">
+              
+              <img src="uploade/foxtail.jpg" style="width:100%; height: 65vh;">
+            </div>
+            <div class="slidess">
+              
+              <img src="uploade/1000.jpg" style="width:100%; height: 65vh;">
+            </div>
+            
+            <div class="slidess">
+              
+              <img src="uploade/news1.png" style="width:100%; height: 65vh;">
+            </div>
+            <div class="slidess">
+              
+              <img src="uploade/1000.jpg" style="width:100%; height: 65vh;">
+            </div>
+            
+            <div class="slidess">
+              
+              <img src="uploade/foxtail.jpg" style="width:100%; height: 65vh;">
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+            <div class="caption-maindiv">
+              <p id="caption"></p>
+            </div>
+            <div class="row" style="heigh5vh;">
+              <div class="life">
+                <img class="show cursur" src="uploade/foxtail.jpg" style="width:100%; height:10vh;" onclick="currentSlide(1)" alt="ThWoods">
+              </div>
+              <div class="life">
+                <img class="show cursur" src="uploade/1000.jpg" style="width:100%; height:10vh;" onclick="currentSlide(2)" alt="Cinque Terre">
+              </div>
+              <div class="life">
+                <img class="show cursur" src="uploade/news1.png" style="width:100%; height:10vh;" onclick="currentSlide(3)" alt="Mountains and fjords">
+              </div>
+              <div class="life">
+                <img class="show cursur" src="uploade/foxtail.jpg" style="width:100%; height:10vh;" onclick="currentSlide(4)" alt="Northern Lights">
+              </div>
+              <div class="life">
+                <img class="show cursur" src="uploade/news1.png" style="width:100%; height:10vh;" onclick="currentSlide(5)" alt="Nature and sunrise">
+              </div>
+              <div class="life">
+                <img class="show cursur" src="uploade/1000.jpg" style="width:100%; height:10vh;" onclick="currentSlide(6)" alt="Snowy Mountains">
+              </div>
+            </div>
+          </div>
+          <script>
+          var slideIndex = 1;
+          showSlides(slideIndex);
+          function plusSlides(n) {
+          showSlides(slideIndex += n);
+          }
+          function currentSlide(n) {
+          showSlides(slideIndex = n);
+          }
+          function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("slidess");
+          var dots = document.getElementsByClassName("show");
+          // var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+          }
+          </script>
+        </section>
+        
+        <br><br><br>
+        <!-- blog page -->
+        <section>
+          <h1 style="font-weight:bold; margin-top: 40px; font-size:30px; text-align:center;"> Blog</h1>
+          
+          <div style="margin-left:10%">
+            <div class="blogrow">
+              <div class="blogcrd">
+                <img src="uploade/news1.png" alt="alt">
+                <h3>New Zealand Heading </h3>
+                <p style="margin-bottom:10px; color:gray; font-size:12px;">15 july 2015</p>
+                <p> Modify, resize, or recolor Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 ...</p>
+                <p><button>more info ..</button></p>
+              </div>
+            </div>
+            <div class="blogrow">
+              <div class="blogcrd">
+                <img src="uploade/news1.png" alt="alt">
+                <h3>New Zealand Heading </h3>
+                <p style="margin-bottom:10px; color:gray; font-size:12px;">15 july 2015</p>
+                <p> Modify, resize, or recolor Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 ...</p>
+                <p><button>more info ..</button></p>
+              </div>
+            </div>
+            <div class="blogrow">
+              <div class="blogcrd">
+                <img src="uploade/news1.png" alt="alt">
+                <h3>New Zealand Heading </h3>
+                <p style="margin-bottom:10px; color:gray; font-size:12px;">15 july 2015</p>
+                <p> Modify, resize, or recolor Round icon. Icons8. Icons Icons. PNG and SVG icons in 35 ...</p>
+                
+                <button>more info ..</button>
+                
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- 9th page contact -->
+        <section style="width:100%; background-color:yello; margin-top: 30px;">
+          <div style="display: inline-flex; justify-items: space-around; margin-left:0px; margin-top:40px;">
+            <div>
+              
+              <div style="padding-right: 0px; background-color:yello;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13834.212059709655!2d77.8481516!3d29.9059776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1636442263567!5m2!1sen!2sin" width="600" height="600" style="border:0;border-radius: 0px;" allowfullscreen="" loading="lazy"></iframe>
+                
+              </div>
+            </div>
+            <!-- 1 -->
+            <div>
+              
+              <form style="padding-left: 15px; padding-right: 15px; padding-bottom: 45px; background-color:yellow;" >
+                <h1 style="text-align:center; font-weight:bold; font-size: 30px; padding-top: 15px; padding-bottom: 15px;">Contact Form</h1>
+                <label  style="float:left; font-weight:bold;">Full Name* :</label>
+                <input type="text" name="firstname" placeholder="Your name..">
+                <label  style="float:left; font-weight:bold;">Email*:</label>
+                <input type="email"  name="" placeholder="Email ID.">
+                <label style="float:left; font-weight:bold;">Subject*:</label>
+                <input type="text"  name="" placeholder="Subject.">
+                <label style="float:left; font-weight:bold;">Massage*:</label>
+                <textarea cols="60" rows="10">Type YOur Massage Here..</textarea>
+                
+                
+                <input type="submit" value="Submit" class="inf">
+              </form>
+            </div>
+          </div>
+          
+        </section>
+        <!-- last line -->
+        <br><br>
+        <section style="width:98%">
+          <div class="row" style="margin-left: 15%;">
+            <div class="column">
+              <div class="card">
+                
+                <h3>Office address</h3>
+                <p> Bangad kupinde munci o9 sera salyan<br> nepal</p>
+                
+              </div>
+            </div>
+            
+            
+            <div class="column">
+              <div class="card">
+                
+                <h3>Follow us</h3>
+                <p> face book  twiter instagram  linkden</p>
+                
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="card">
+                
+                <h3>COntact us</h3>
+                <p> 0987863728 <br>zipy @skypy <br>zippy @ gmail.com</p>
+                
+                
+              </div>
+            </div>
+          </div>
+           <div style="background-color: #fff; text-align: center; border: 2px solid #C0C0C0; padding: 3.5px; padding-left: 10px;margin-top: 30px;">
+                         <b style="color: #02225B"><span style="color: #4E4E4E"></span>Lets's Grow more task-2
+              </b><br /> 
+                            <span style="color: #4E4E4E">&copy; Developed by:</span> <b style="color: #02225B; font-size: 12px"> Yuvraj Budhathoki ,Bsc.4th year
+              <br> <i class="fa fa-phone-square"></i> 63325908 ,52004262 ,0796912 </b><br>
+               
+                        </div>
+        </section>
+      </section>
+    </body>
+  </html>
